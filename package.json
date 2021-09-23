@@ -4,8 +4,13 @@
   "module": "dist/stimulus-webpack-helpers.js",
   "main": "dist/stimulus-webpack-helpers.umd.js",
   "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/stimulus-webpack-helpers.js",
+    "dist/stimulus-webpack-helpers.umd.js",
+    "dist/types/index.d.ts"
+  ],
   "license": "MIT",
-  "description": "Stimulus JavaScript framework: webpack helpers",
+  "description": "Webpack helpers for Stimulus.",
   "author": "Basecamp, LLC",
   "homepage": "https://stimulus.hotwired.dev",
   "repository": {
@@ -14,6 +19,9 @@
   },
   "bugs": {
     "url": "https://github.com/hotwired/stimulus-webpack-helpers/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "clean": "rm -fr dist",
@@ -34,6 +42,6 @@
     "webpack": "^5.52.1"
   },
   "peerDependencies": {
-    "@hotwired/stimulus": "^3.0.0-beta.2"
+    "@hotwired/stimulus": ">= 3.0"
   }
 }
