@@ -1,6 +1,6 @@
 {
   "name": "@hotwired/stimulus-webpack-helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "module": "dist/stimulus-webpack-helpers.js",
   "main": "dist/stimulus-webpack-helpers.umd.js",
   "types": "dist/types/index.d.ts",
