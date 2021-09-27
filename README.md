@@ -9,9 +9,10 @@ Call webpack's [`require.context`](https://webpack.js.org/api/module-methods/#re
 import { Application } from "@hotwired/stimulus"
 import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
 
-window.Stimulus = Application.start()
+const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/)
-Stimulus.load(definitionsFromContext(context))
+application.load(definitionsFromContext(context))
+window.Stimulus = application
 ```
 
 ## Getting Help & Contributing Back
