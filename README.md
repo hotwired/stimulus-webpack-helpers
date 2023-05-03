@@ -2,7 +2,7 @@
 
 ## Using Stimulus Webpack Helpers
 
-Call webpack's [`require.context`](https://webpack.js.org/api/module-methods/#require-context) helper with the path to the folder containing your Stimulus controllers. Then, pass the resulting context to the `Application#load` method using the `definitionsFromContext` helper:
+Call webpack's [`require.context`](https://webpack.js.org/api/module-methods/#requirecontext) helper with the path to the folder containing your Stimulus controllers. Then, pass the resulting context to the `Application#load` method using the `definitionsFromContext` helper:
 
 ```js
 // src/application.js
